@@ -133,10 +133,19 @@ SpringBoard logs exactly which gate is failing:
 | `YES to show upgrade mini buddy` | `buildVersion`/`setupMigratorVersion` etc. in lockdownd |
 | `YES because !activated` | activation not committed — check `ideviceactivation state` |
 
-## Caveats
+## After a reboot
 
-- **Tethered.** A full reboot returns to the setup screen — redo from step 1
-  (jailbreak) through step 7. Keep the battery charged.
+The bypass is **tethered** — but only partially:
+
+- **Survives reboot** (lives on the data partition): the lockdownd
+  `com.apple.purplebuddy` setup-done keys, the unbricked `data_ark.plist`.
+- **Does not survive**: the jailbreak itself, and the patched
+  `mobileactivationd` (rootfs writes go to checkra1n's volatile union overlay).
+
+So after a power-off: DFU → `checkra1n -c` → `./reapply.sh` — which does the
+daemon swap, activation check, and respring in one shot.
+
+## Caveats
 - Deleting `Setup.app` does **not** work on 12.5.x — SpringBoard spins at ~100%
   CPU trying to launch it. Leave it in place; `ForceNoBuddy` + the lockdownd
   state make it exit voluntarily.
