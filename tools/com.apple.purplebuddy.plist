@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SetupDone</key>
+	<true/>
+	<key>SetupFinishedAllSteps</key>
+	<true/>
+	<key>SetupState</key>
+	<string>SetupCompleted</string>
+	<key>ForceNoBuddy</key>
+	<true/>
+	<key>BuddySetupDone</key>
+	<true/>
+	<key>buildVersion</key>
+	<string>16H81</string>
+	<key>hardwareModel</key>
+	<string>J86AP</string>
+	<key>SetupVersion</key>
+	<integer>11</integer>
+	<key>setupMigratorVersion</key>
+	<integer>99</integer>
+	<key>AssistantPresented</key>
+	<true/>
+	<key>DictationPresented</key>
+	<true/>
+	<key>WiFiPresented</key>
+	<true/>
+	<key>SafetyPresented</key>
+	<true/>
+	<key>ScreenTimePresented</key>
+	<true/>
+	<key>MesaPresented</key>
+	<true/>
+	<key>PBDiagnostics</key>
+	<true/>
+	<key>AppleIDPB10Presented</key>
+	<true/>
+	<key>AssistantSOffered</key>
+	<true/>
+	<key>PBAppActivity2Presented</key>
+	<true/>
+	<key>HSA2UpgradeMiniBuddy3Ran</key>
+	<true/>
+	<key>PaymentMiniBuddy4Ran</key>
+	<true/>
+	<key>UserChoseLanguage</key>
+	<true/>
+	<key>Language</key>
+	<string>en</string>
+	<key>Locale</key>
+	<string>en_US</string>
+</dict>
+</plist>
