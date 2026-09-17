@@ -1,6 +1,7 @@
 # iOS 12 Activation Bypass (checkm8 devices)
 
-Step-by-step activation/setup bypass for checkm8-vulnerable devices on iOS 12.x —
+Step-by-step activation/setup bypass for **any checkm8-vulnerable device on
+iOS 12.x** (A5–A11: iPhone 4s–X, iPad 2–7, iPad mini 2–4, iPod touch 5–7) —
 developed and verified on an **iPad mini 2 (iPad4,5, A7) running iOS 12.5.7 (16H81)**
 that was stuck on the *Connect to iTunes* screen despite reporting `FactoryActivated`.
 
@@ -161,5 +162,16 @@ daemon swap, activation check, and respring in one shot.
 |---|---|---|---|
 | iPad mini 2 (iPad4,5) | A7 / S5L8960 | 12.5.7 | 16H81 |
 
-Other checkm8 devices on iOS 12.x should work identically — pass the right
-`<buildVersion>`/`hardwareModel` to `setupdone`.
+Other checkm8 devices on iOS 12.x work identically — pass the right
+`<buildVersion>`/`hardwareModel` to `setupdone`. The lockdownd
+`com.apple.purplebuddy` state is per-iOS-version, not per-device; the only
+device-specific step is getting the checkm8 jailbreak itself to land.
+
+## Credits
+
+- **The checkra1n team** — for the jailbreak that makes all of this possible
+  (and for being the only checkm8 implementation that reliably lands on A7).
+- **wrcsubers/iOS_ActivationBypass** — for the patched `mobileactivationd`.
+- **libimobiledevice** — for the tooling that talks to the device.
+
+*Workflow developed together with [Devin](https://devin.ai).*
