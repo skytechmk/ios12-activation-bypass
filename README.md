@@ -5,6 +5,8 @@ iOS 12.x** (A5–A11: iPhone 4s–X, iPad 2–7, iPad mini 2–4, iPod touch 5�
 developed and verified on an **iPad mini 2 (iPad4,5, A7) running iOS 12.5.7 (16H81)**
 that was stuck on the *Connect to iTunes* screen despite reporting `FactoryActivated`.
 
+**Author:** [Nikola Stojchevski](https://github.com/skytechmk) ([@skytechmk](https://github.com/skytechmk))
+
 > **Disclaimer:** For devices you own. This bypasses the setup/activation UI on the
 > device itself; it does not remove an iCloud account from Apple's servers or make
 > the device cellular/iCloud functional.
